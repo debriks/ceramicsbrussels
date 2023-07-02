@@ -23,6 +23,12 @@ html:focus-within {
 body {
   margin: 0;
   padding: 0;
+  font-family: noigrotesk !important;
+  line-height: 1;
+  letter-spacing: -0.05em; /* adjust letter spacing depending on font size*/
+  word-spacing: normal; /* adjust word spacing depending on font size */
+  -webkit-font-smoothing: antialiased; /* looks better */
+  -moz-osx-font-smoothing: grayscale; /* looks better */
 }
 
 a:not([class]) {
