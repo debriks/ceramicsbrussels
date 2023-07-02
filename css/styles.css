@@ -8,7 +8,7 @@
 }
 
 :root {
-  --border: clamp(25px, 3vw, 75px);
+  --border: clamp(25px, 2vw, 50px);
   --pl: clamp(3px, 2.5vw, 25px);
   --pr: clamp(30px, 5vw, 50px);
   --pt: clamp(3px, 2.5vw, 25px);
@@ -19,9 +19,15 @@
 }
 
 h1 {
-  font-size: clamp(50px, 10vw, 60px);
+  font-size: clamp(45px, 10vw, 60px);
   letter-spacing: -2px;
   font-weight: lighter;
+  text-align: center;
+  line-height: 1;
+}
+
+p {
+  font-size: clamp(22px, 2.4vw, 32px);
 }
 
 /* HEADER */
@@ -164,14 +170,32 @@ h1 {
   position: relative;
   width: 100%;
   overflow: hidden;
-  top: 5%;
-  transform: translateY(-5%);
 }
 
 .full-width-image img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.translate-1 {
+  transform: translateY(-5%);
+}
+
+.translate-2 {
+  transform: translateY(-13%);
+}
+
+.translate-3 {
+  transform: translateY(-30%);
+}
+
+.translate-4 {
+  transform: translateY(-40%);
+}
+
+.translate-5 {
+  transform: translateY(-25%);
 }
 
 .caption-container {
@@ -188,8 +212,9 @@ h1 {
   transform: rotate(-180deg);
   white-space: nowrap;
   color: rgb(0, 0, 0);
-  font-size: clamp(10px, 2vw, 14px);
+  font-size: clamp(8px, 1.5vw, 14px);
   padding: 35px;
+  letter-spacing: 1;
 }
 
 /* GRID-1 */
@@ -200,13 +225,8 @@ h1 {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  top: 10%;
   transform: translateY(-10%);
   background-color: white;
-  padding-top: clamp(0px, 5vw, 50px);
-  padding-left: clamp(0px, 5vw, 50px);
-  padding-right: clamp(0px, 5vw, 50px);
-  padding-bottom: 100px;
 }
 
 .grid-item {
@@ -214,6 +234,10 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   grid-column: span 2;
   gap: clamp(10px, 3vw, 30px);
+  padding-top: clamp(0px, 5vw, 50px);
+  padding-left: clamp(0px, 5vw, 50px);
+  padding-right: clamp(0px, 5vw, 50px);
+  padding-bottom: 100px;
 }
 
 .grid-item-img {
@@ -221,8 +245,7 @@ h1 {
   justify-content: center;
 }
 
-.grid-container p {
-  font-size: clamp(22px, 2vw, 30px);
+.grid-item p {
   padding: clamp(5px, 2vw, 10px);
 }
 
@@ -231,6 +254,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 80px;
 }
 
 .guest-of-honour img {
@@ -239,6 +263,7 @@ h1 {
 }
 
 .guest-of-honour p {
+  font-size: clamp(22px, 2vw, 30px);
   width: clamp(350px, 80vw, 870px);
 }
 
@@ -248,9 +273,61 @@ h1 {
   cursor: pointer;
 }
 
+.txt-container {
+  height: 550px;
+}
+
+.br-desktop {
+  display: none;
+}
+
+.objective-container {
+  display: flex;
+  padding-top: clamp(0px, 5vw, 50px);
+  padding-left: clamp(0px, 5vw, 50px);
+  padding-right: clamp(0px, 5vw, 50px);
+}
+
+.objective-item p {
+  padding: clamp(5px, 2vw, 10px);
+}
+
+.galleries-application {
+  padding-top: 70px;
+  background-color: #ffff00;
+  width: 100%;
+  height: 1000px;
+}
+
+.intro-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-txt p {
+  padding: 25px 0 clamp(5px, 2vw, 10px);
+  width: 85%;
+}
+
 @media (min-width: 640px) and (max-width: 810px) {
   .hero {
     height: 350px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    transform: translateY(-3%);
+  }
+
+  .translate-2 {
+    top: 27%;
+    transform: translateY(-27%);
+  }
+
+  .translate-3 {
+    top: 29%;
+    transform: translateY(-29%);
   }
 }
 
@@ -265,8 +342,7 @@ h1 {
 
   .grid-container {
     grid-template-columns: 1fr;
-    top: 3%;
-    transform: translateY(-3%);
+    transform: translateY(-4%);
   }
 
   .grid-item {
@@ -279,7 +355,6 @@ h1 {
   }
 
   .image-container:nth-child(2) {
-    top: 10%;
     transform: translateY(-10%);
   }
 
@@ -287,13 +362,36 @@ h1 {
     height: 500px;
   }
 
-  .full-width-image {
-    top: 10%;
-    transform: translateY(-10%);
+  .translate-1 {
+    transform: translateY(-15%);
+  }
+
+  .translate-2 {
+    transform: translateY(-27%);
+  }
+
+  .translate-3 {
+    transform: translateY(-17%);
+  }
+
+  .translate-4 {
+    transform: translateY(-25%);
   }
 
   .vertical-text {
     padding: 10px;
+  }
+
+  .br-desktop {
+    display: block;
+  }
+
+  .txt-container {
+    height: 600px;
+  }
+
+  .objective-container {
+    flex-direction: column;
   }
 }
 
@@ -364,7 +462,10 @@ h1 {
   border-bottom: 3px solid;
 }
 
-.translate-10 {
-  top: 10%;
-  transform: translateY(-10%);
+.white-bg {
+  background-color: white;
+}
+
+.pt {
+  padding-top: 20px;
 }
