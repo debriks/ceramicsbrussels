@@ -23,6 +23,10 @@ h1 {
   line-height: 1;
 }
 
+.mt-h1 {
+  margin-top: 50px;
+}
+
 h2 {
   font-size: clamp(22px, 2.4vw, 32px);
   font-weight: bold;
@@ -31,6 +35,10 @@ h2 {
 
 p {
   font-size: clamp(22px, 2.4vw, 32px);
+}
+
+a {
+  color: black;
 }
 
 .p-border {
@@ -77,6 +85,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transform: translateY(-25%);
 }
 
 .contemporary {
@@ -396,6 +405,76 @@ header {
   font-size: clamp(18px, 2vw, 26px);
 }
 
+/* FAIR-ADVISORY */
+/* FAIR-ADVISORY */
+/* FAIR-ADVISORY */
+/* FAIR-ADVISORY */
+/* FAIR-ADVISORY */
+/* FAIR-ADVISORY */
+/* FAIR-ADVISORY */
+/* FAIR-ADVISORY */
+
+.fair-advisory {
+  height: auto;
+  width: 100%;
+}
+
+.fair-advisory-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap);
+}
+
+.fair-management p {
+  font-size: clamp(18px, 2vw, 26px);
+}
+
+.advisory-board img {
+  width: 250px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.advisory-board p {
+  font-size: clamp(18px, 2vw, 26px);
+}
+
+/* INFO-CONTACT */
+/* INFO-CONTACT */
+/* INFO-CONTACT */
+/* INFO-CONTACT */
+/* INFO-CONTACT */
+/* INFO-CONTACT */
+/* INFO-CONTACT */
+/* INFO-CONTACT */
+
+.info-contact-txt {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info-contact-txt p {
+  font-size: clamp(18px, 2vw, 26px);
+}
+
+/* SOCIAL */
+/* SOCIAL */
+/* SOCIAL */
+/* SOCIAL */
+
+.social img {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.social p {
+  font-size: clamp(18px, 2vw, 26px);
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
 /* MEDIUM SCREENS */
 /* MEDIUM SCREENS */
 /* MEDIUM SCREENS */
@@ -441,13 +520,43 @@ header {
 
   .border-container-txt {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .downloads {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .artist-prize img {
+    width: 200px;
+  }
+
+  .galleries-application {
+    padding-top: 50px;
+  }
+
   .artist-prize-txt {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .program-steps {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .opacity-50 img {
+    width: 130px;
+  }
+
+  .fair-advisory-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .advisory-board img {
+    width: 190px;
+  }
+
+  .info-contact-txt {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -461,6 +570,27 @@ header {
 
   .tour-taxis {
     height: 80px;
+  }
+
+  .downloads {
+    gap: 10px;
+  }
+
+  .social img {
+    width: 150px;
+    padding: 40px 0 20px;
+  }
+
+  .br-mobile {
+    display: none;
+  }
+
+  .mt-h1 {
+    margin-top: 20px;
+  }
+
+  .pt-50 {
+    padding-top: 25px;
   }
 }
 
@@ -506,10 +636,6 @@ header {
   padding-bottom: 15px;
 }
 
-.mt-h1 {
-  margin-top: 50px;
-}
-
 .mt-h2 {
   margin-top: 25px;
 }
@@ -524,8 +650,4 @@ header {
 
 .pt-25 {
   padding-top: 25px;
-}
-
-.pt-50 {
-  padding-top: 50px;
 }
