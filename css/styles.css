@@ -8,8 +8,6 @@
 }
 
 :root {
-  --border: clamp(25px, 2vw, 50px);
-  --p-border: 60px 50px;
   --gap: 60px;
 }
 
@@ -18,7 +16,7 @@
 }
 
 h1 {
-  font-size: clamp(45px, 10vw, 60px);
+  font-size: clamp(40px, 9vw, 60px);
   letter-spacing: -2px;
   font-weight: lighter;
   text-align: center;
@@ -35,6 +33,15 @@ p {
   font-size: clamp(22px, 2.4vw, 32px);
 }
 
+.p-border {
+  padding: 50px;
+}
+
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
+/* HEADER */
 /* HEADER */
 /* HEADER */
 /* HEADER */
@@ -42,7 +49,6 @@ p {
 header {
   position: relative;
   height: auto; /* Adjust the height as per your requirement */
-  padding: var(--p-border);
 }
 
 /* HEADER-TOP */
@@ -70,14 +76,15 @@ header {
   height: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .contemporary {
-  max-height: 170px;
+  height: 170px;
 }
 
 .tour-taxis {
-  max-height: 120px;
+  height: 120px;
 }
 
 /* HEADER-BOTTOM */
@@ -121,7 +128,6 @@ header {
   position: relative;
   width: 100%;
   height: auto;
-  padding: var(--p-border);
 }
 
 .hero-container {
@@ -184,8 +190,8 @@ header {
   transform: rotate(-180deg);
   white-space: nowrap;
   color: rgb(0, 0, 0);
-  font-size: clamp(12px, 4vw, 16px);
-  padding: 35px;
+  font-size: clamp(8px, 3vw, 16px);
+  padding: clamp(15px, 2vw, 35px);
   letter-spacing: 1;
 }
 
@@ -201,7 +207,6 @@ header {
 .grid-container {
   display: flex;
   flex-direction: column;
-  padding: var(--border);
   height: auto;
 }
 
@@ -209,7 +214,6 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--gap);
-  padding: 20px;
 }
 
 .grid-container-txt a {
@@ -222,7 +226,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 80px;
 }
 
 .guest-of-honour img {
@@ -233,6 +236,10 @@ header {
 .guest-of-honour p {
   width: clamp(350px, 80vw, 920px);
   padding-bottom: var(--p-pb);
+}
+
+.guest-of-honour-txt p {
+  padding: 0 25px;
 }
 
 .cta-btn {
@@ -252,14 +259,12 @@ header {
 .border-container {
   display: flex;
   flex-direction: column;
-  padding: var(--border);
 }
 
 .border-container-txt {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--gap);
-  padding: var(--border);
 }
 
 .location {
@@ -317,18 +322,20 @@ header {
 .downloads {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 80px 0;
+  padding: 80px 50px;
+  gap: var(--gap);
   width: 100%;
 }
 
 .downloads img {
-  width: 30%;
+  width: clamp(130px, 3.5vw, 180px);
   margin: 0 auto;
 }
 
 .downloads-txt {
   font-size: clamp(18px, 2vw, 26px);
-  padding: 15px 150px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .size-up {
@@ -346,7 +353,7 @@ header {
 
 .artist-prize {
   width: 100%;
-  padding: var(--p-border);
+  height: auto;
 }
 
 .artist-prize img {
@@ -355,13 +362,37 @@ header {
 }
 
 .artist-prize-txt {
-  padding-top: 80px;
+  padding-top: clamp(40px, 6vw, 80px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--gap);
 }
 
 .artist-prize-jury p {
+  font-size: clamp(18px, 2vw, 26px);
+}
+
+/* PROGRAM */
+/* PROGRAM */
+/* PROGRAM */
+/* PROGRAM */
+/* PROGRAM */
+/* PROGRAM */
+/* PROGRAM */
+/* PROGRAM */
+
+.program-container {
+  height: auto;
+  width: 100%;
+}
+
+.program-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
+.program-steps p {
   font-size: clamp(18px, 2vw, 26px);
 }
 
@@ -375,6 +406,10 @@ header {
   .br-desktop {
     display: block;
   }
+
+  .p-border {
+    padding: 35px;
+  }
 }
 
 /* SMALL SCREENS */
@@ -387,6 +422,19 @@ header {
 /* SMALL SCREENS */
 
 @media screen and (max-width: 640px) {
+  .hero-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero-link img {
+    width: 150px;
+    margin-left: 100px;
+  }
+
+  .p-border {
+    padding: 20px;
+  }
+
   .grid-container-txt {
     grid-template-columns: 1fr;
   }
@@ -399,8 +447,20 @@ header {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .artist-prize-txt {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .br-desktop {
     display: block;
+  }
+
+  .contemporary {
+    height: 100px;
+  }
+
+  .tour-taxis {
+    height: 80px;
   }
 }
 
@@ -460,4 +520,12 @@ header {
 
 .opacity-50 {
   opacity: 0.5;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.pt-50 {
+  padding-top: 50px;
 }
