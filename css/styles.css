@@ -199,7 +199,7 @@ header {
   transform: rotate(-180deg);
   white-space: nowrap;
   color: rgb(0, 0, 0);
-  font-size: clamp(8px, 3vw, 16px);
+  font-size: clamp(7px, 2.5vw, 16px);
   padding: clamp(15px, 2vw, 35px);
   letter-spacing: 1;
 }
@@ -429,6 +429,10 @@ header {
   font-size: clamp(18px, 2vw, 26px);
 }
 
+.fair-management h1 {
+  line-height: 0.7;
+}
+
 .advisory-board img {
   width: 250px;
   margin: 0 auto;
@@ -482,12 +486,20 @@ header {
 /* MEDIUM SCREENS */
 
 @media (min-width: 640px) and (max-width: 810px) {
+  .galleries-application {
+    padding-top: 40px;
+  }
+
   .br-desktop {
     display: block;
   }
 
   .p-border {
     padding: 35px;
+  }
+
+  .mt-h1 {
+    margin-top: 0px;
   }
 }
 
