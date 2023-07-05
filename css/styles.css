@@ -284,6 +284,10 @@ header {
   display: none;
 }
 
+.br-mobile {
+  display: none;
+}
+
 /* OBJECTIVES */
 /* OBJECTIVES */
 /* OBJECTIVES */
@@ -431,6 +435,10 @@ header {
 
 .fair-management h1 {
   line-height: 0.7;
+}
+
+.fair-management img {
+  width: clamp(80px, 2.8vw, 120px);
 }
 
 .advisory-board img {
@@ -603,10 +611,6 @@ header {
   .social img {
     width: 150px;
     padding: 40px 0 20px;
-  }
-
-  .br-mobile {
-    display: none;
   }
 
   .mt-h1 {
