@@ -9,10 +9,7 @@
 
 :root {
   --gap: 60px;
-}
-
-.container {
-  width: 100%;
+  --fs-small: clamp(18px, 2vw, 26px);
 }
 
 h1 {
@@ -21,10 +18,6 @@ h1 {
   font-weight: lighter;
   text-align: center;
   line-height: 1;
-}
-
-.mt-h1 {
-  margin-top: 30px;
 }
 
 h2 {
@@ -39,6 +32,30 @@ p {
 
 a {
   color: black;
+}
+
+.container {
+  width: 100%;
+}
+
+.mt-h1 {
+  margin-top: 30px;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.ai-c {
+  align-items: center;
 }
 
 .p-border {
@@ -56,14 +73,14 @@ a {
 
 header {
   position: relative;
-  height: auto; /* Adjust the height as per your requirement */
+  height: auto;
 }
 
 /* HEADER-TOP */
+/* HEADER-TOP */
+/* HEADER-TOP */
 
 .header-top {
-  display: flex;
-  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -82,17 +99,14 @@ header {
 .header-middle {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   transform: translateY(-25%);
 }
 
-.contemporary {
+.header-contemporary {
   height: 170px;
 }
 
-.tour-taxis {
+.header-tour-taxis {
   height: 120px;
 }
 
@@ -109,6 +123,10 @@ header {
 .header-date {
   width: clamp(220px, 54%, 600px);
   margin-left: clamp(20px, 30%, 700px);
+}
+
+.pb-25 {
+  padding: 25px;
 }
 
 .border-bg {
@@ -133,14 +151,12 @@ header {
 /* HERO */
 
 .hero {
-  display: flex;
   position: relative;
   width: 100%;
   height: auto;
 }
 
 .hero-container {
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   width: 100%;
@@ -155,8 +171,6 @@ header {
 }
 
 .hero-link {
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -186,9 +200,9 @@ header {
 }
 
 .caption-container {
-  position: absolute;
   display: flex;
   align-items: center;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
@@ -214,27 +228,21 @@ header {
 /* GRID-1 */
 
 .grid-container {
-  display: flex;
   flex-direction: column;
   height: auto;
 }
 
 .grid-container-txt {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--gap);
 }
 
 .grid-container-txt a {
-  display: flex;
   justify-content: center;
   padding-top: 25px;
 }
 
 .guest-of-honour {
-  display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .guest-of-honour img {
@@ -266,12 +274,10 @@ header {
 /* LOCATION */
 
 .border-container {
-  display: flex;
   flex-direction: column;
 }
 
 .border-container-txt {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--gap);
 }
@@ -285,7 +291,7 @@ header {
 }
 
 .br-mobile {
-  display: none;
+  display: block;
 }
 
 /* OBJECTIVES */
@@ -314,13 +320,11 @@ header {
 }
 
 .galleries-application-txt {
-  display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .galleries-application-txt p {
-  padding: 25px 0 clamp(5px, 2vw, 10px);
+  /* padding: 25px 0 clamp(5px, 2vw, 10px); */
   width: 85%;
 }
 
@@ -333,9 +337,8 @@ header {
 /* DOWNLOADS */
 
 .downloads {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 80px 50px;
+  padding: 50px;
   gap: var(--gap);
   width: 100%;
 }
@@ -346,7 +349,7 @@ header {
 }
 
 .downloads-txt {
-  font-size: clamp(18px, 2vw, 26px);
+  font-size: var(--fs-small);
   max-width: 300px;
   margin: 0 auto;
 }
@@ -376,13 +379,12 @@ header {
 
 .artist-prize-txt {
   padding-top: clamp(40px, 6vw, 80px);
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--gap);
 }
 
 .artist-prize-jury p {
-  font-size: clamp(18px, 2vw, 26px);
+  font-size: var(--fs-small);
 }
 
 /* PROGRAM */
@@ -400,13 +402,12 @@ header {
 }
 
 .program-steps {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
 }
 
 .program-steps p {
-  font-size: clamp(18px, 2vw, 26px);
+  font-size: var(--fs-small);
 }
 
 /* FAIR-ADVISORY */
@@ -424,13 +425,12 @@ header {
 }
 
 .fair-advisory-container {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--gap);
 }
 
 .fair-management p {
-  font-size: clamp(18px, 2vw, 26px);
+  font-size: var(--fs-small);
 }
 
 .fair-management h1 {
@@ -438,7 +438,7 @@ header {
 }
 
 .fair-management img {
-  width: clamp(80px, 2.8vw, 120px);
+  max-width: 70px;
 }
 
 .advisory-board img {
@@ -448,7 +448,7 @@ header {
 }
 
 .advisory-board p {
-  font-size: clamp(18px, 2vw, 26px);
+  font-size: var(--fs-small);
 }
 
 /* INFO-CONTACT */
@@ -461,12 +461,11 @@ header {
 /* INFO-CONTACT */
 
 .info-contact-txt {
-  display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 .info-contact-txt p {
-  font-size: clamp(18px, 2vw, 26px);
+  font-size: var(--fs-small);
 }
 
 /* SOCIAL */
@@ -480,11 +479,15 @@ header {
 }
 
 .social p {
-  font-size: clamp(18px, 2vw, 26px);
+  font-size: var(--fs-small);
 }
 
 .pt-50 {
   padding-top: 50px;
+}
+
+.pt-75 {
+  padding-top: 75px;
 }
 
 /* MEDIA QUERIES */
@@ -542,8 +545,12 @@ header {
     margin-left: 100px;
   }
 
-  .p-border {
-    padding: 20px;
+  .header-contemporary {
+    height: 100px;
+  }
+
+  .header-tour-taxis {
+    height: 80px;
   }
 
   .grid-container-txt {
@@ -592,18 +599,6 @@ header {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .br-desktop {
-    display: block;
-  }
-
-  .contemporary {
-    height: 100px;
-  }
-
-  .tour-taxis {
-    height: 80px;
-  }
-
   .downloads {
     gap: 10px;
   }
@@ -611,6 +606,18 @@ header {
   .social img {
     width: 150px;
     padding: 40px 0 20px;
+  }
+
+  .p-border {
+    padding: 20px;
+  }
+
+  .pb-25 {
+    padding: 10px;
+  }
+
+  .br-desktop {
+    display: block;
   }
 
   .mt-h1 {
@@ -623,6 +630,10 @@ header {
 
   .pt-mobile {
     padding-top: 20px;
+  }
+
+  .br-mobile {
+    display: none;
   }
 }
 
@@ -671,10 +682,6 @@ header {
 
 .pb-30 {
   padding-bottom: 30px;
-}
-
-.pb-25 {
-  padding-bottom: 25px;
 }
 
 .pt-25 {
