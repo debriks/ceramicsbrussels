@@ -242,6 +242,7 @@ header {
 
 .grid-container-txt {
   grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 
 .grid-container-txt a {
