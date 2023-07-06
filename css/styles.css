@@ -565,6 +565,7 @@ header {
 
   .grid-container-txt {
     grid-template-columns: 1fr;
+    gap: 0px;
   }
 
   .border-container-txt {
