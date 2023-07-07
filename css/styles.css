@@ -519,7 +519,7 @@ header {
 /* MEDIUM SCREENS */
 /* MEDIUM SCREENS */
 
-@media (min-width: 640px) and (max-width: 810px) {
+@media (min-width: 641px) and (max-width: 810px) {
   .galleries-application {
     padding-top: 40px;
   }
