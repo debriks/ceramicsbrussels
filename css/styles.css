@@ -364,6 +364,10 @@ header {
   margin: 0 auto;
 }
 
+.downloads-txt img {
+  cursor: pointer;
+}
+
 .size-up {
   width: 40%;
 }
