@@ -356,16 +356,13 @@ header {
 .downloads img {
   width: clamp(130px, 3.5vw, 180px);
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .downloads-txt {
   font-size: var(--fs-small);
   max-width: 300px;
   margin: 0 auto;
-}
-
-.downloads-txt img {
-  cursor: pointer;
 }
 
 .size-up {
